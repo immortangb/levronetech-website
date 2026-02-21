@@ -4,13 +4,12 @@ A professional IT company website built with React, TypeScript, Vite, and Tailwi
 
 ## Features
 
-- **Responsive Design** - Works on all devices (desktop, tablet, mobile)
-- **Modern UI/UX** - Clean, professional design with smooth animations
-- **Service Showcase** - Display all IT services with expandable details
-- **Product Catalog** - Laptop sales with brand filtering
-- **Contact Form** - Functional contact form with validation
-- **Student Discount** - Highlighted 10% discount for UFS students
-- **SEO Optimized** - Meta tags and semantic HTML
+- **Responsive Design** - Works on all devices
+- **Modern UI/UX** - Clean, professional design
+- **Service Showcase** - 6 services with expandable details
+- **Product Catalog** - 8 laptops with brand filtering
+- **Contact Form** - Functional contact form
+- **Student Discount** - 10% discount for UFS students
 
 ## Tech Stack
 
@@ -21,92 +20,48 @@ A professional IT company website built with React, TypeScript, Vite, and Tailwi
 - Lucide React (icons)
 - Sonner (toast notifications)
 
-## Getting Started
+## Deployment to Vercel
 
-### Prerequisites
+### Step 1: Push to GitHub
+1. Create a new repository on GitHub
+2. Upload all files from this ZIP
+3. Commit the changes
 
-- Node.js 18+ 
-- npm or yarn
+### Step 2: Deploy on Vercel
+1. Go to [vercel.com](https://vercel.com) and sign in
+2. Click "Add New" → "Project"
+3. Import your GitHub repository
+4. Vercel will auto-detect settings
+5. Click "Deploy"
 
-### Installation
+### Step 3: Custom Domain (Optional)
+1. In Vercel dashboard, go to Settings → Domains
+2. Add your domain: `levronetech.co.za`
+3. Follow DNS instructions
 
-1. Clone the repository:
+## Local Development
+
 ```bash
-git clone https://github.com/yourusername/levronetech-website.git
-cd levronetech-website
-```
-
-2. Install dependencies:
-```bash
+# Install dependencies
 npm install
-```
 
-3. Start the development server:
-```bash
+# Start development server
 npm run dev
-```
 
-4. Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-### Build for Production
-
-```bash
+# Build for production
 npm run build
 ```
 
-The built files will be in the `dist` folder.
-
-## Deployment
-
-### Vercel
-
-1. Push your code to GitHub
-2. Connect your GitHub repository to Vercel
-3. Deploy with default settings
-
-### Custom Domain
-
-To use your custom domain (levronetech.co.za):
-
-1. In Vercel dashboard, go to your project settings
-2. Click "Domains"
-3. Add your domain: `levronetech.co.za`
-4. Follow Vercel's DNS configuration instructions
-
-## Project Structure
-
-```
-levronetech-website/
-├── public/
-│   ├── images/          # Website images
-│   └── vite.svg         # Favicon
-├── src/
-│   ├── App.tsx          # Main application component
-│   ├── main.tsx         # Entry point
-│   ├── index.css        # Global styles
-│   └── vite-env.d.ts    # TypeScript declarations
-├── index.html           # HTML template
-├── package.json         # Dependencies
-├── tsconfig.json        # TypeScript config
-├── vite.config.ts       # Vite config
-├── tailwind.config.js   # Tailwind CSS config
-└── vercel.json          # Vercel routing config
-```
-
-## Services & Pricing
-
-- **Basic Repairs**: From R350
-- **Hardware Repairs**: From R750
-- **CCTV Installation**: From R2,500
-- **Student Discount**: 10% off for UFS students
-
-## Contact
+## Contact Information
 
 - **Address**: UFS Bloemfontein, 9301
 - **Phone**: 082 049 9013
 - **Email**: brian@levronetech.co.za
-- **Hours**: Monday-Friday, 08:00-16:00
+- **Hours**: Mon-Fri, 08:00-16:00
 
-## License
+## Pricing
 
-This project is proprietary to Levrone Technologies.
+- Basic Repairs: From R350
+- Hardware Repairs: From R750
+- CCTV Installation: From R2,500
+- Student Discount: 10% off

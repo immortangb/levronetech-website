@@ -2,29 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
-  }
+/* Base styles */
+* {
+  box-sizing: border-box;
 }
 
-@layer utilities {
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent-500;
-  }
-  .bg-gradient-hero {
-    @apply bg-gradient-to-br from-primary-600 via-primary-700 to-accent-700;
-  }
-  .bg-gradient-card {
-    @apply bg-gradient-to-br from-white to-primary-50;
-  }
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Smooth scrolling */
@@ -50,7 +40,7 @@ html {
   background: #4f46e5;
 }
 
-/* Animation classes */
+/* Animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -66,7 +56,7 @@ html {
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
-/* Service card hover effect */
+/* Service card hover */
 .service-card {
   transition: all 0.3s ease;
 }
