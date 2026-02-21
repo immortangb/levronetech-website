@@ -1,73 +1,112 @@
-# React + TypeScript + Vite
+# Levrone Technologies Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional IT company website built with React, TypeScript, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design** - Works on all devices (desktop, tablet, mobile)
+- **Modern UI/UX** - Clean, professional design with smooth animations
+- **Service Showcase** - Display all IT services with expandable details
+- **Product Catalog** - Laptop sales with brand filtering
+- **Contact Form** - Functional contact form with validation
+- **Student Discount** - Highlighted 10% discount for UFS students
+- **SEO Optimized** - Meta tags and semantic HTML
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide React (icons)
+- Sonner (toast notifications)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Node.js 18+ 
+- npm or yarn
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/levronetech-website.git
+cd levronetech-website
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Install dependencies:
+```bash
+npm install
 ```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist` folder.
+
+## Deployment
+
+### Vercel
+
+1. Push your code to GitHub
+2. Connect your GitHub repository to Vercel
+3. Deploy with default settings
+
+### Custom Domain
+
+To use your custom domain (levronetech.co.za):
+
+1. In Vercel dashboard, go to your project settings
+2. Click "Domains"
+3. Add your domain: `levronetech.co.za`
+4. Follow Vercel's DNS configuration instructions
+
+## Project Structure
+
+```
+levronetech-website/
+├── public/
+│   ├── images/          # Website images
+│   └── vite.svg         # Favicon
+├── src/
+│   ├── App.tsx          # Main application component
+│   ├── main.tsx         # Entry point
+│   ├── index.css        # Global styles
+│   └── vite-env.d.ts    # TypeScript declarations
+├── index.html           # HTML template
+├── package.json         # Dependencies
+├── tsconfig.json        # TypeScript config
+├── vite.config.ts       # Vite config
+├── tailwind.config.js   # Tailwind CSS config
+└── vercel.json          # Vercel routing config
+```
+
+## Services & Pricing
+
+- **Basic Repairs**: From R350
+- **Hardware Repairs**: From R750
+- **CCTV Installation**: From R2,500
+- **Student Discount**: 10% off for UFS students
+
+## Contact
+
+- **Address**: UFS Bloemfontein, 9301
+- **Phone**: 082 049 9013
+- **Email**: brian@levronetech.co.za
+- **Hours**: Monday-Friday, 08:00-16:00
+
+## License
+
+This project is proprietary to Levrone Technologies.
